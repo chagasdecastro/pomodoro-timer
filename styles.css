@@ -1,0 +1,74 @@
+body {
+    font-family: 'Lora', serif;
+    background-image: url('img/pomodoro.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #BF200A;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('seu-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.timer-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    margin-top: -140px;
+}
+
+.timer-card:hover {
+    transform: scale(1.1);
+}
+
+#timer-display {
+    text-align: center;
+    font-size: 160px;
+    color: #661106;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    color: #661106;
+    border: none;
+    margin-right: 20px;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+button:hover {
+    transform: scale(1.1);
+}

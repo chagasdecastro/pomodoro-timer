@@ -2,8 +2,8 @@ let totalTime = 25 * 60; // 25 minutos em segundos
 let breakTime = 5 * 60; // 5 minutos de tempo de descanso
 let timeLeft = totalTime;
 let timerInterval;
-let timerState = 'stopped'; // 'stopped', 'running', 'paused'
-let isWorkPeriod = true; // Se é um período de trabalho ou descanso
+let timerState = 'stopped';
+let isWorkPeriod = true;
 
 function updateTimerDisplay() {
     const minutes = Math.floor(timeLeft / 60);
@@ -29,7 +29,7 @@ function startTimer() {
                 }
                 timeLeft = totalTime;
                 updateTimerDisplay();
-                startTimer(); // Inicie o próximo período automaticamente
+                startTimer(); 
             }
         }, 1000);
         timerState = 'running';
@@ -50,7 +50,7 @@ function resetTimer() {
 }
 
 function playSound() {
-    const audio = new Audio('alarme.mp3'); // Substitua 'alarme.mp3' com o nome do seu arquivo de som
+    const audio = new Audio('alarme.mp3'); 
     audio.play();
 }
 
